@@ -4,9 +4,6 @@ from statistical_counters.models import Statistics
 
 class StatDetailsSerializer(serializers.ModelSerializer):
     timestamp = serializers.DateField()
-    views = serializers.IntegerField()
-    clicks = serializers.IntegerField()
-    cost_of_click = serializers.FloatField()
 
     class Meta:
         model = Statistics
